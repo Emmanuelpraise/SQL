@@ -1,0 +1,22 @@
+CREATE TABLE student (
+	Student_id INT,
+    Name VARCHAR(20),
+    Major VARCHAR(20),
+    PRIMARY KEY(student_id)
+);
+
+SELECT * FROM student;
+
+INSERT INTO student VALUES(1, 'Praise', 'Biology');
+INSERT INTO student VALUES(2, 'Kate', 'Physics');
+INSERT INTO student(Student_id, Name) VALUES(3, 'Jake');
+INSERT INTO student VALUES(4, 'Jack', 'Sociology');
+INSERT INTO student VALUES(5, 'Mark', 'Computer-Science');
+
+DESCRIBE student;
+
+DROP TABLE student;
+
+ALTER TABLE student ADD gpa DECIMAL(3,2);
+
+ALTER TABLE student DROP COLUMN gpa;
