@@ -147,7 +147,7 @@ CREATE TABLE employee (
 );
 SELECT first_name, last_name FROM employee;
 
-DROP TABLE employee;
+-- DROP TABLE employee;
 
 CREATE TABLE branch (
   branch_id INT PRIMARY KEY,
@@ -161,7 +161,7 @@ SELECT * FROM branch;
 DELETE FROM employee
 WHERE emp_id = 102;
 
-DROP TABLE branch;
+-- DROP TABLE branch;
 
 ALTER TABLE employee
 ADD FOREIGN KEY(branch_id)
